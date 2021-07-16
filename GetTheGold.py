@@ -33,7 +33,6 @@ def moveAll(shapeList,dx,dy):
 
 def checkGameOver(player,circlelistx,circlelisty,reccy):
     if player.getCenter().getX() in range(0,75) and player.getCenter().getY() in range(225,300):
-        print("In safe zone")
         return False
     else:
         for circle in circlelistx:
